@@ -68,6 +68,8 @@ public class UIManager : MonoBehaviour
 
     public void DepositCash()
     {
+        if (inputCash.text == "") return;
+
         if (int.Parse(Cash.text) < int.Parse(inputCash.text))
         {
             PushLackPopup();
@@ -77,6 +79,7 @@ public class UIManager : MonoBehaviour
             Cash.text = (int.Parse(Cash.text) - int.Parse(inputCash.text)).ToString();
             Account.text = (int.Parse(Account.text) + int.Parse(inputCash.text)).ToString();
         }
+        inputCash.text = "";
     }
     
     public void WithdrawCash(int money)
@@ -94,14 +97,17 @@ public class UIManager : MonoBehaviour
 
     public void WithdrawCash()
     {
+        if (inputAccount.text == "") return;
+
         if (int.Parse(Account.text) < int.Parse(inputAccount.text))
         {
             PushLackPopup();
         }
         else
         {
-            Account.text = (int.Parse(Account.text) - int.Parse(inputCash.text)).ToString();
-            Cash.text = (int.Parse(Cash.text) + int.Parse(inputCash.text)).ToString();
+            Account.text = (int.Parse(Account.text) - int.Parse(inputAccount.text)).ToString();
+            Cash.text = (int.Parse(Cash.text) + int.Parse(inputAccount.text)).ToString();
         }
+        inputAccount.text = "";
     }
 }
