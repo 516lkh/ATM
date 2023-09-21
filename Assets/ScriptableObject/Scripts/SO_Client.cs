@@ -2,19 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SO_Client : MonoBehaviour
+[CreateAssetMenu(fileName = "DefaultClientData", menuName = "World/Client", order = 0)]
+public class SO_Client : ScriptableObject
 {
-    
+    [Header("ClientInfo")]
+    public string name;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [Header("ClientCash")]
+    public int cash;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
