@@ -97,6 +97,7 @@ public class UIManager : MonoBehaviour
     private void Awake()
     {
         UI_instance = this;
+
         //Cash = CashFigure.GetComponent<TMP_Text>();
         //Account = AccountFigure.GetComponent<TMP_Text>();
     }
