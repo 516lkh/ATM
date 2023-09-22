@@ -29,7 +29,7 @@
 string.format 이용
 
 
-금액 숫자만 입력
+- 금액 숫자만 입력
 
 ![48](https://github.com/516lkh/ATM/assets/82098924/a57b739e-4ae1-4a0f-9391-0e2b5fed654e)
 
