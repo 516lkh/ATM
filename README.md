@@ -2,6 +2,7 @@
 
 # UI 매니저 구현
 - UI를 stack으로 관리하는 UI 매니저 구현
+![46](https://github.com/516lkh/ATM/assets/82098924/0f9ae049-148a-4cea-8430-dddf2d84dfdb)
 
 # 기본 기능 구현
 - 옵션 선택 기능
